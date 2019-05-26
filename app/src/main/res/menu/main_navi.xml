@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="Budget homes"
+            android:id="@+id/budgethome"
+            android:icon="@drawable/ic_home_black_24dp"
+            />
+        <item android:title="Top New"
+            android:id="@+id/newhome"
+            android:icon="@drawable/ic_newproject"
+            />
+        <item android:title="I want this home"
+            android:id="@+id/iwish"
+            android:icon="@drawable/ic_dreamhouse"
+            />
+
+    </group>
+    <item android:title="Share"
+        android:id="@+id/share"
+        android:icon="@drawable/ic_share_black_24dp"
+        />
+    <item android:title="Contact Us"
+        android:id="@+id/contactus"
+        android:icon="@drawable/ic_call_black_24dp"
+        />
+</menu>

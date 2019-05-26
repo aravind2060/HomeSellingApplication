@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".settings">
+
+      <android.support.v7.widget.Toolbar
+          android:layout_width="match_parent"
+          android:layout_height="?attr/actionBarSize"
+          android:id="@+id/toolbar_in_settings"
+          android:background="@color/colorPrimaryDark"
+          ></android.support.v7.widget.Toolbar>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/last_login_in_settings"
+        android:text="Last Login"
+        android:layout_above="@id/deleteaccount"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimary"
+        android:layout_margin="12dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/logout"
+        android:text="DELETE ACCOUNT"
+        android:id="@+id/deleteaccount"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimaryDark"
+        android:layout_margin="12dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        />
+    <Button
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_primary"
+        android:text="LOG OUT"
+        android:layout_margin="12dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:id="@+id/logout"
+        />
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        android:layout_below="@id/logout"
+        android:id="@+id/card1_in_settings"
+        app:cardPreventCornerOverlap="true"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reachus"
+        android:text="Reach Us At"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
+        android:textSize="22dp"
+        /></android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card1_in_settings"
+        app:cardElevation="24dp"
+        app:cardCornerRadius="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        >
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="At Google Maps"
+          android:textAlignment="center"
+          android:textSize="25dp"
+          android:onClick="sendmapdata"
+          />
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

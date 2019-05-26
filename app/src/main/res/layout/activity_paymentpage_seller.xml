@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".paymentpage_seller">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="12dp"
+        app:cardCornerRadius="12dp"
+        app:cardUseCompatPadding="true"
+        app:cardPreventCornerOverlap="true"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:id="@+id/image_in_payment_page_seller"
+                android:src="@drawable/ic_launcher_background"
+                android:scaleType="fitXY"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_in_payment_page_seller"
+                android:text="Broker: "
+                android:id="@+id/broker_in_payment_page_seller"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/broker_in_payment_page_seller"
+                android:id="@+id/price_in_payment_page_seller"
+                android:text="Price:  Rs. "
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/date_of_upload_payment_page_seller"
+                android:text="Uploaded At: "
+                android:layout_below="@id/price_in_payment_page_seller"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/phone_payment_page_seller"
+                android:layout_below="@id/date_of_upload_payment_page_seller"
+                android:text="Phone Number: "
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email_payment_seller"
+                android:text="Email: "
+                android:layout_below="@id/phone_payment_page_seller"
+                />
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/address_payment_page_seller"
+                  android:text="Location: "
+                  android:layout_below="@id/email_payment_seller"
+                  />
+            <Button
+                android:layout_below="@id/address_payment_page_seller"
+                android:id="@+id/buy_now_in_payment_page_seller"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buy now"
+                android:background="@color/colorPrimary"
+                android:textSize="15dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No Seller is ready to sell"
+                android:layout_centerInParent="true"
+                android:visibility="invisible"
+                android:id="@+id/no_seller_in_payment_page"
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
